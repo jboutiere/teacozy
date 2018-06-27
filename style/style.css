@@ -1,0 +1,69 @@
+html {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  max-height: 50px;
+  opacity: .9;
+  padding: 10px 10px;
+  flex-grow: 1;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+a {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
+  text-decoration-line: underline;
+  padding: 0 10px 0 10px;
+  margin: 0 10px 0 10px;
+}
+
+
+.container {
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+  display: flex;
+  width: 1232px;
+  padding-top: 116px;
+  margin: 0 auto 78px auto;
+  justify-content: center;
+}
+
+.contact {
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact h5 {
+  padding-top: 5px;
+}
+
+footer h5 {
+  display: block;
+  color: seashell;
+  font-family: Verdana;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.footer {
+  text-align: left;
+  }
