@@ -1,15 +1,22 @@
 html {
   background-color: black;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  opacity: 0.9;
 }
 
 header {
   display: flex;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1;
   width: 100%;
   height: 69px;
   align-items: center;
   border-bottom: 1px solid seashell;
+  background-color: black;
 }
 
 .logo {
@@ -25,6 +32,13 @@ header {
   margin-right: 10px;
 }
 
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+  background-color: black;
+}
+
+
 a {
   font-family: Helvetica;
   font-size: 22px;
@@ -38,13 +52,86 @@ a {
 
 .container {
   font-family: Helvetica;
+  z-index: 2;
   color: seashell;
   opacity: 0.9;
   display: flex;
-  width: 1232px;
-  padding-top: 116px;
+  flex-direction: column;
+  flex: auto 1 1200px;
+  width: 1200px;
   margin: 0 auto 78px auto;
+  text-align: center;
   justify-content: center;
+}
+
+.mission {
+  display: flex;
+background-image: url(../images/img-mission-background.jpg);
+height: 700px;
+padding-top: 70px;
+}
+
+.mission-content {
+display: block;
+align-self: center;
+width: 100%;
+padding 0.5rem;
+}
+
+.teas {
+  margin: 50px;
+}
+
+.teas-content {
+display: block;
+align-self: center;
+width: 100%;
+padding 0.5rem;
+}
+
+.locations {
+display: flex;
+flex-direction: row;
+background-image: url(../images/img-locations-background.jpg);
+height: 500px;
+}
+
+.locations h2 {
+  margin: 0;
+  padding: 10px;
+  background-color: inherit;
+}
+
+.locations-content {
+display: inline;
+flex-direction: row;
+flex-wrap: nowrap;
+position: relative;
+align-self: center;
+width: 100%;
+margin: 15px 20px 0 20px;
+padding 0.5rem;
+}
+
+.downtown {
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin: 15px;
+    width: 300px;
+    background: black;
+}
+.bayside{
+    width: 300px;
+    background:blue;
+    margin:0px auto;
+}
+.oakdale {
+    position:absolute;
+    top:0px;
+    right:0px;
+    width: 300px;
+    background:green;
 }
 
 .contact {
