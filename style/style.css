@@ -3,7 +3,6 @@ html {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
-  opacity: 0.9;
 }
 
 header {
@@ -17,6 +16,21 @@ header {
   align-items: center;
   border-bottom: 1px solid seashell;
   background-color: black;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav span {
+  display: inline-block;
+  text-decoration-line: underline;
+  padding: 20px 10px;
+}
+
+a {
+  color: seashell;
 }
 
 .logo {
@@ -39,12 +53,11 @@ h2, h3, h4 {
 }
 
 
-a {
+body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   opacity: 0.9;
-  text-decoration-line: underline;
   padding: 0 10px 0 10px;
   margin: 0 10px 0 10px;
 }
@@ -54,6 +67,7 @@ a {
   font-family: Helvetica;
   z-index: 2;
   color: seashell;
+  font-weight: bold;
   opacity: 0.9;
   display: flex;
   flex-direction: column;
@@ -80,26 +94,48 @@ padding 0.5rem;
 
 .teas {
   margin: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.teas-content {
+.tea-content {
 display: block;
-align-self: center;
+text-align: center;
 width: 100%;
 padding 0.5rem;
 }
 
+.types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#fall {
+  padding: 10px;
+}
+
 .locations {
 display: flex;
-flex-direction: row;
+flex-direction: column;
+color: seashell;
+justify-content: center;
 background-image: url(../images/img-locations-background.jpg);
 height: 500px;
 }
 
-.locations h2 {
-  margin: 0;
-  padding: 10px;
-  background-color: inherit;
+#locations h2 {
+display: flex;
+flex-direction: column;
+color: seashell;
+justify-content: center;
+margin: 0;
+width: 100%;
+background-color: inherit;
 }
 
 .locations-content {
@@ -108,49 +144,55 @@ flex-direction: row;
 flex-wrap: nowrap;
 position: relative;
 align-self: center;
-width: 100%;
-margin: 15px 20px 0 20px;
+opacity: 1;
+width: 85%;
+margin: 15px 20px 15px 20px;
 padding 0.5rem;
 }
 
-.downtown {
+#locations h3 {
+    padding: 20px 0 20px 0;
+}
+
+#locations h4 {
+    padding: 20px 0 20px 0;
+    font-weight: normal;
+}
+
+#downtown {
     position:absolute;
     top:0px;
     left:0px;
-    margin: 15px;
+    margin-right: 15px;
     width: 300px;
-    background: black;
-}
-.bayside{
+    height: 300px;
+    }
+
+#bayside{
     width: 300px;
-    background:blue;
-    margin:0px auto;
+    height: 300px;
+    top: 0px;
+    margin: 0px auto;
 }
-.oakdale {
+
+#oakdale {
     position:absolute;
+    height: 300px;
     top:0px;
     right:0px;
     width: 300px;
-    background:green;
-}
+    margin-left: 15px;
+    }
 
 .contact {
   font-weight: bold;
   text-align: center;
+  height: 200px;
 }
 
-.contact h5 {
-  padding-top: 5px;
-}
-
-footer h5 {
-  display: block;
+.footer h5 {
   color: seashell;
-  font-family: Verdana;
-  font-size: 12px;
+  font-family: Helvetica;
   margin-left: 20px;
-}
-
-.footer {
   text-align: left;
   }
